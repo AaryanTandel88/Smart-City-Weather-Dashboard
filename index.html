@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label id="lbl" for="input_place">Enter your city name</label>
-    <input type="text" id="input_place">
-    <button id="btn">search</button>
-    <div id="root"></div>
+    <div class="page-wrapper">
+        <header class="top-header">
+            <h1>Weather App</h1>
+            <p class="subtitle">Enter city to see it's weather</p>
+        </header>
+
+        <section class="search-section">
+            <input type="text" id="input_place" placeholder="e.g. Mumbai or New York">
+            <button id="btn">Search</button>
+        </section>
+
+        <section id="root" class="weather-display"></section>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
